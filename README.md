@@ -1,11 +1,10 @@
 ## Obiettivo
- In questa challenge dovrai implementare una chat twitch like seguendo il mockup fornito.
+ In questa challenge dovrai implementare una chat seguendo il mockup fornito.
 Connettendoti al server tramite web socket inizierai a ricevere uno stream di messaggi provenienti da diversi utenti.
 Di seguito le feature che dovrai implementare!
 
 ## Feature
-- Con un tasto “join” puoi entrare nella chat e iniziare a ricevere e leggere i messaggi provenienti dal server.
-- Una volta entrato tramite un tasto “leave” puoi lasciare la chat- Per ogni nuovo messaggio che arriva, se non stai guardando i messaggi vecchi, la pagina scrolla in automatico al messaggio più recente.
+- Per ogni nuovo messaggio che arriva, se non stai guardando i messaggi vecchi, la pagina scrolla in automatico al messaggio più recente.
 - Se stai consultando i messaggi vecchi ti deve apparire un messaggio che ti avverte che sono disponibili messaggi più recenti, se lo clicchi la pagina scrolla all’ultimo messaggio.
 - Tramite un input puoi scrivere messaggi e inviarli.
 - Devi prevedere la possibilità di inviare non solo messaggi testuali ma anche immagini e gif.
