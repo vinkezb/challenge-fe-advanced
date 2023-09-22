@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                /* Specify the ECMAScript target version (Node.js supports ES6 and above). */
+    "module": "commonjs",              /* Specify the module system (CommonJS is the default for Node.js). */
+    "outDir": "./dist",                /* Specify the output directory for compiled JavaScript files. */
+    "rootDir": "./src",                /* Specify the root directory for TypeScript source files. */
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,           /* Allow default imports from modules with no default export (for compatibility with Node.js). */
+    "skipLibCheck": true,              /* Skip type checking of declaration files (recommended for better performance). */
+    "forceConsistentCasingInFileNames": true /* Ensure consistent casing of file names for cross-platform compatibility. */
+  },
+  "include": [
+    "src/**/*.ts"                    /* Specify the TypeScript source files to include in the compilation. Adjust the path to match your project's structure. */
+  ],
+  "exclude": [
+    "node_modules"                   /* Exclude the node_modules directory from TypeScript compilation. */
+  ]
+}
