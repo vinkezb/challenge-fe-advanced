@@ -1,16 +1,16 @@
 import { User } from "./models";
 
 export const users: User[] = [
-  { name: 'Tintin', color: 'lightblue' },
-  { name: 'Astérix', color: 'gold' },
-  { name: 'Corto Maltese', color: 'sienna' },
-  { name: 'Doraemon', color: 'dodgerblue' },
-  { name: 'Nausicaä', color: 'forestgreen' },
-  { name: 'Lupin III', color: 'darkred' },
-  { name: 'Aster Blistok', color: 'darkorange' },
-  { name: 'Cubitus', color: 'lightseagreen' },
-  { name: 'Gaston Lagaffe', color: 'tomato' },
-  { name: 'Mafalda', color: 'indigo' },
+  { id: '', name: 'Tintin', color: 'lightblue' },
+  { id: '', name: 'Astérix', color: 'gold' },
+  { id: '', name: 'Corto Maltese', color: 'sienna' },
+  { id: '', name: 'Doraemon', color: 'dodgerblue' },
+  { id: '', name: 'Nausicaä', color: 'forestgreen' },
+  { id: '', name: 'Lupin III', color: 'darkred' },
+  { id: '', name: 'Aster Blistok', color: 'darkorange' },
+  { id: '', name: 'Cubitus', color: 'lightseagreen' },
+  { id: '', name: 'Gaston Lagaffe', color: 'tomato' },
+  { id: '', name: 'Mafalda', color: 'indigo' },
 ];
 
 export const textMessages: string[] = [
@@ -54,4 +54,22 @@ export const textMessages: string[] = [
   "Streamer: *Takes a break* Chat: *Riot mode activated*",
   "Chat: *Spams 'POGGERS' during intense moments*",
   "This chat has its own language, and I'm learning it!",
+];
+
+export const cssColors = [
+  "red",
+  "blue",
+  "green",
+  "yellow",
+  "orange",
+  "purple",
+  "pink",
+  "brown",
+  "cyan",
+  "magenta",
+  "lime",
+  "teal",
+  "indigo",
+  "violet",
+  "gray",
 ];
