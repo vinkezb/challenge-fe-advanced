@@ -1,5 +1,5 @@
 ## Obiettivo
- In questa challenge dovrai implementare una chat seguendo il mockup fornito.
+ In questa challenge dovrai implementare una chat seguendo il [mockup](https://www.figma.com/file/E2RxXVo5L9N0moOJNpaqvG/Chat%5BSfida-FE%5D?type=design&node-id=0%3A1&mode=design&t=VU4BCJR2xMyYTJp6-1).
 Connettendoti al server tramite web socket inizierai a ricevere uno stream di messaggi provenienti da diversi utenti.
 Di seguito le feature che dovrai implementare!
 
