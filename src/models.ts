@@ -9,4 +9,5 @@ export interface Message {
   user: User;
   body: string;
   taggedUserId?: string;
+  timestamp: Date;
 }
