@@ -35,6 +35,7 @@ Esempio di payload di un messaggio:
     "color": "blue"
   },
   "body": "Hello, world!",
+  "timestamp": "2023-09-25T14:32:54.669Z"
   "taggedUserId": "54321"
 }`
 
