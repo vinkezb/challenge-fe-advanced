@@ -6,6 +6,7 @@ import Chat from "../Chat";
 import './chat-container.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { setUsers } from '../../reducers/users';
+import { setMessages } from '../../reducers/messages';
 
 function ChatContainer() {
     const dispatch = useDispatch();
@@ -20,6 +21,10 @@ function ChatContainer() {
 
         socket.on('current-users', (data) => {
             dispatch(setUsers(data))
+        });
+
+        socket.on('chat-message', (data) => {
+            dispatch(setMessages(data))
         });
     })
     return (
