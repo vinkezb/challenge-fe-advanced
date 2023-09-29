@@ -31,7 +31,7 @@ function MessageInput() {
     const message: Message = {
       user: { ...currentUser, name: "You" },
       body: inputValue,
-      timestamp: new Date().toDateString(),
+      timestamp: new Date().toISOString(),
       isFromUser: true,
     };
     dispatch(setMessages(message));

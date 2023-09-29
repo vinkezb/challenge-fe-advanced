@@ -1,12 +1,13 @@
 .chat {
-    height: 100%;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
 }
 
 .chat::-webkit-scrollbar {
-    display: none;
+  display: none;
 }

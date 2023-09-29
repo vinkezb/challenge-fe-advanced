@@ -7,3 +7,13 @@
   @extend .message;
   background-color: rgba(125, 18, 190, 0.1);
 }
+
+.timestamp {
+  display: flex;
+  align-self: flex-end;
+}
+
+.timestamp-from-user {
+  @extend .timestamp;
+  align-self: flex-start;
+}
