@@ -13,6 +13,6 @@ export interface UserState {
 export default configureStore({
   reducer: {
     users: users,
-    message: messages
+    messages: messages
   },
 })

@@ -1,17 +1,24 @@
 import React from 'react';
 import { Avatar } from '@mui/material';
 import './user-component.scss';
-import { User } from '../../models';
+import { Message, User } from '../../models';
+import MessageComponent from '../MessageComponent';
 
 interface Props {
-    user: User;
+    user?: User;
+    message?: Message
 }
 
-function UserComponent ({user} : Props) {
+function UserComponent ({user, message} : Props) {
     return (
         <div className="user-component">
-            <Avatar sx={{bgcolor: user.color}}/>
-            <h6>{user.name}</h6>
+            <Avatar sx={{bgcolor: user ? user?.color : message?.user.color}}/>
+            <div className={message ? "message-container" : ""}>
+                <h6>{user ? user?.name : message?.user.name}</h6>
+                {message && (
+                    <MessageComponent message={message?.body}/>
+                )}
+            </div>
         </div>
     )
 }

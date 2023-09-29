@@ -5,3 +5,10 @@
     padding-left: 16px;
     padding-right: 16px;
 }
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: flex-start;
+}
