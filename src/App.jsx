@@ -1,8 +1,8 @@
-import Chat from "./pages/Chat";
+import ChatContainer from "./pages/ChatContainer";
 
 function App () {
     return (
-        <Chat/>
+        <ChatContainer/>
     )
 }
 

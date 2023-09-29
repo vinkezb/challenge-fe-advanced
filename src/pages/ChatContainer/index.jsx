@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import socketIO from 'socket.io-client';
+import SidebarDesktop from "../SidebarDesktop";
+import Chat from "../Chat";
+import './chat-container.scss';
 
-function Chat() {
+function ChatContainer() {
     useEffect(() => {
         // Create a WebSocket connection
         const socket = new socketIO.connect('http://localhost:8080');
@@ -12,8 +15,11 @@ function Chat() {
         };
     })
     return (
-        <div className="chat"></div>
+        <div className="chat-container">
+            <SidebarDesktop/>
+            <Chat/>
+        </div>
     ) 
 }
 
-export default Chat;
+export default ChatContainer;
