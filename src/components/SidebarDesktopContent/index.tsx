@@ -1,16 +1,18 @@
 import React from 'react';
 import './sidebar-content.scss';
-import { users } from '../../data';
 import UserComponent from '../UserComponent';
+import { useSelector } from 'react-redux';
+import { UserState } from '../../store';
 
 function SidebarDesktopContent () {
+    const usersOnline = useSelector((state: UserState) => state.users.usersOnline)
     return (
         <div className="content">
-            {users.map((user, index) => (
-                <>
-                    <UserComponent key={`user_${index}`} user={user}/>
-                    {index != users.length - 1 && <hr/>}
-                </>
+            {usersOnline.map((user, index) => (
+                <div key={`user_${index}`}>
+                    <UserComponent  user={user}/>
+                    {index != usersOnline.length - 1 && <hr />}
+                </div>
             ))}
         </div>
     )
