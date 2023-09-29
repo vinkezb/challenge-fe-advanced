@@ -1,11 +1,11 @@
 import React from 'react';
 import { useEffect } from "react";
-import socketIO, { io } from 'socket.io-client';
+import { io } from 'socket.io-client';
 import SidebarDesktop from "../SidebarDesktop";
 import Chat from "../Chat";
 import './chat-container.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { setUsers } from '../../reducers/users';
+import { setCurrentUser, setUsers } from '../../reducers/users';
 import { setMessages } from '../../reducers/messages';
 
 function ChatContainer() {
@@ -25,6 +25,10 @@ function ChatContainer() {
 
         socket.on('chat-message', (data) => {
             dispatch(setMessages(data))
+        });
+
+        socket.on('me', (data) => {
+            dispatch(setCurrentUser(data))
         });
     })
     return (

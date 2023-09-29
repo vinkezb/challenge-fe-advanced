@@ -58,7 +58,7 @@ io.on('connection', (socket: Socket) => {
         let message: Message = {
           user: getRandomUser(),
           body: getRandomMessage(),
-          timestamp: new Date(),
+          timestamp: new Date().toDateString(),
         }
         io.emit(CHAT_MSG, message);
     } else {

@@ -1,4 +1,9 @@
 .message {
-    padding: 16px;
-    background-color: rgba(111, 225, 153, 0.2);
+  padding: 16px;
+  background-color: rgba(111, 225, 153, 0.2);
+}
+
+.message-from-user {
+  @extend .message;
+  background-color: rgba(125, 18, 190, 0.1);
 }

@@ -4,11 +4,12 @@ import { Message, User } from '../models'
 import messages from '../reducers/messages'
 export interface UserState {
     users: {
-      usersOnline: User[]
+      usersOnline: User[],
+      currentUser: User
     },
     messages: {
       messages: Message[]
-    }
+    },
 }
 export default configureStore({
   reducer: {
