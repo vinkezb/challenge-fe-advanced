@@ -1,3 +1,4 @@
+import React from 'react';
 import Logo  from '../../assets/images/Logo.png';
 import './sidebar-header.scss';
 

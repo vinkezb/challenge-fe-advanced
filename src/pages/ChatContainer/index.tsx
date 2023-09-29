@@ -1,5 +1,6 @@
+import React from 'react';
 import { useEffect } from "react";
-import socketIO from 'socket.io-client';
+import socketIO, { io } from 'socket.io-client';
 import SidebarDesktop from "../SidebarDesktop";
 import Chat from "../Chat";
 import './chat-container.scss';
@@ -7,12 +8,12 @@ import './chat-container.scss';
 function ChatContainer() {
     useEffect(() => {
         // Create a WebSocket connection
-        const socket = new socketIO.connect('http://localhost:8080');
+        const socket = io('http://localhost:8080');
     
         // Event handler for when the connection is opened
-        socket.onopen = () => {
-          console.log('WebSocket connection opened');
-        };
+        socket.on('connect', () => {
+            console.log('Connected to the server');
+        });
     })
     return (
         <div className="chat-container">
