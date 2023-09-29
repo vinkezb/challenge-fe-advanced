@@ -22,7 +22,10 @@ function UserComponent({ user, message }: Props) {
           order: message?.isFromUser ? 2 : 1,
         }}
       />
-      <div className={message ? "message-container" : ""}>
+      <div
+        className={message ? "message-container" : ""}
+        style={{ order: message?.isFromUser ? 1 : 2 }}
+      >
         <h6>{user ? user?.name : message?.user.name}</h6>
         {message && <MessageComponent message={message} />}
       </div>
