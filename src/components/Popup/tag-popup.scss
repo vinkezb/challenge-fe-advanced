@@ -24,3 +24,10 @@
     left: 0;
   }
 }
+
+.media-popup {
+  @extend .tag-popup;
+  width: 180px;
+  height: 269px;
+  left: 277px;
+}

@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Message } from "../../models";
 import { UserState } from "../../store";
 import { setMessages } from "../../reducers/messages";
-import TagPopup from "../TagPopup";
+import Popup from "../Popup";
 
 interface Props {
   sendToBottomOnSendMessage: () => void;
@@ -21,6 +21,7 @@ function MessageInput({ sendToBottomOnSendMessage }: Props) {
 
   const [inputValue, setInputValue] = useState("");
   const [openTagPopup, setOpenTagPopup] = useState(false);
+  const [openShareMedia, setOpenShareMedia] = useState(false);
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
@@ -54,13 +55,17 @@ function MessageInput({ sendToBottomOnSendMessage }: Props) {
     if (inputValue.includes(" ")) setOpenTagPopup(false);
   }, [inputValue]);
 
+  const shareMedia = () => {
+    setOpenShareMedia(!openShareMedia);
+  };
+
   return (
     <>
       <div className="message-input-container">
         <ActionButton
           color="#D7F8E4"
           icon={<PaperClipOutlined />}
-          onClick={() => {}}
+          onClick={() => shareMedia()}
         />
         <OutlinedInput
           placeholder="Write your message"
@@ -75,7 +80,10 @@ function MessageInput({ sendToBottomOnSendMessage }: Props) {
           onClick={() => sendMessage()}
         />
       </div>
-      {openTagPopup && <TagPopup userNameString={inputValue} />}
+      {openTagPopup && (
+        <Popup title="Online users" userNameString={inputValue} />
+      )}
+      {openShareMedia && <Popup title="Share content" />}
     </>
   );
 }
