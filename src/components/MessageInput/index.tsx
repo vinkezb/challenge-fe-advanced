@@ -9,7 +9,11 @@ import { UserState } from "../../store";
 import { setMessages } from "../../reducers/messages";
 import TagPopup from "../TagPopup";
 
-function MessageInput() {
+interface Props {
+  sendToBottomOnSendMessage: () => void;
+}
+
+function MessageInput({ sendToBottomOnSendMessage }: Props) {
   const dispatch = useDispatch();
   const currentUser = useSelector(
     (state: UserState) => state.users.currentUser
@@ -30,6 +34,7 @@ function MessageInput() {
   };
 
   const sendMessage = () => {
+    sendToBottomOnSendMessage();
     const message: Message = {
       user: { ...currentUser, name: "You" },
       body: inputValue,

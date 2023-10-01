@@ -39,7 +39,7 @@ function Chat() {
           />
         )}
       </div>
-      <MessageInput />
+      <MessageInput sendToBottomOnSendMessage={() => scrollToBottom()} />
     </div>
   );
 }
