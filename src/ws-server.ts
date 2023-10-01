@@ -53,18 +53,18 @@ io.on("connection", (socket: Socket) => {
   //provide the client with its current data
   io.to(socket.id).emit(ME, newUser);
   //spam messages
-  const messageInterval = setTimeout(() => {
+  const messageInterval = setInterval(() => {
     if (socket.connected) {
       let message: Message = {
         user: getRandomUser(),
         body: getRandomMessage(),
-        timestamp: new Date().toDateString(),
+        timestamp: new Date().toISOString(),
       };
       io.emit(CHAT_MSG, message);
     } else {
       clearInterval(messageInterval);
     }
-  }, 2000);
+  }, 3000);
 
   socket.on(CHAT_MSG, (msg: Message) => {
     console.log("Message received", msg);

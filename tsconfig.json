@@ -12,7 +12,7 @@
   },
   "include": [
     "src/**/*.ts"                    /* Specify the TypeScript source files to include in the compilation. Adjust the path to match your project's structure. */
-  ],
+, "src/hooks/useChatScroll.tsx"  ],
   "exclude": [
     "node_modules"                   /* Exclude the node_modules directory from TypeScript compilation. */
   ]

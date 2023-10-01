@@ -24,9 +24,7 @@ function ChatContainer() {
     });
 
     socket.on("chat-message", (data) => {
-      setTimeout(() => {
-        dispatch(setMessages(data));
-      }, 5000);
+      dispatch(setMessages(data));
     });
 
     socket.on("me", (data) => {

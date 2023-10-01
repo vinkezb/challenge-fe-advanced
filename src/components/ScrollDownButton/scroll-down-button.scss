@@ -1,0 +1,29 @@
+.scroll-down-button {
+  width: 74px;
+  height: 62px;
+  position: fixed;
+  right: 0;
+  bottom: 150px;
+  background-color: #fefff4;
+  border-radius: 8px 0px 0px 8px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  button {
+    width: 27px;
+    height: 27px;
+    font-size: 16px;
+    border: 1px solid black;
+    color: black;
+  }
+}
+
+.scroll-donw-button-mobile {
+  @extend .scroll-down-button;
+  background-color: rgba(215, 248, 228, 0.5);
+}
