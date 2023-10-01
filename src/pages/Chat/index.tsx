@@ -31,7 +31,7 @@ function Chat() {
             key={`message_${index}`}
           />
         ))}
-        {!isAutoScrolling && isLookingAtOlderMessages && (
+        {!isAutoScrolling && (
           <ScrollDonwButton
             icon={<ArrowDownOutlined />}
             onClick={() => scrollToBottom()}

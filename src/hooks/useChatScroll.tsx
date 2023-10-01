@@ -21,9 +21,10 @@ const useChatScroll = (messages: Message[]) => {
   };
 
   useEffect(() => {
+    const chatContainer = chatRef.current;
     // Scroll to the new message when it arrives
     if (!isLookingAtOlderMessages && newMessageRef.current) {
-      newMessageRef.current.scrollIntoView({ behavior: "smooth" });
+      chatContainer.scrollTop = chatContainer.scrollHeight;
     }
   }, [messages]);
 
@@ -32,10 +33,6 @@ const useChatScroll = (messages: Message[]) => {
 
     chatContainer.addEventListener("scroll", handleScroll);
     handleScroll();
-
-    return () => {
-      chatContainer.removeEventListener("scroll", handleScroll);
-    };
   }, [messages]);
 
   useEffect(() => {
