@@ -1,16 +1,16 @@
-import { User } from "./models";
+import { User } from "./model/models";
 
 export const users: User[] = [
-  { id: '', name: 'Tintin', color: 'lightblue' },
-  { id: '', name: 'Astérix', color: 'gold' },
-  { id: '', name: 'Corto Maltese', color: 'sienna' },
-  { id: '', name: 'Doraemon', color: 'dodgerblue' },
-  { id: '', name: 'Nausicaä', color: 'forestgreen' },
-  { id: '', name: 'Lupin III', color: 'darkred' },
-  { id: '', name: 'Aster Blistok', color: 'darkorange' },
-  { id: '', name: 'Cubitus', color: 'lightseagreen' },
-  { id: '', name: 'Gaston Lagaffe', color: 'tomato' },
-  { id: '', name: 'Mafalda', color: 'indigo' },
+  { id: "", name: "Tintin", color: "lightblue" },
+  { id: "", name: "Astérix", color: "gold" },
+  { id: "", name: "Corto Maltese", color: "sienna" },
+  { id: "", name: "Doraemon", color: "dodgerblue" },
+  { id: "", name: "Nausicaä", color: "forestgreen" },
+  { id: "", name: "Lupin III", color: "darkred" },
+  { id: "", name: "Aster Blistok", color: "darkorange" },
+  { id: "", name: "Cubitus", color: "lightseagreen" },
+  { id: "", name: "Gaston Lagaffe", color: "tomato" },
+  { id: "", name: "Mafalda", color: "indigo" },
 ];
 
 export const textMessages: string[] = [

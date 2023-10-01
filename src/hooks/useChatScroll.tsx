@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { Message } from "../models";
+import { Message } from "../model/models";
 
 // Custom hook for managing chat scroll and unread message count
 const useChatScroll = (messages: Message[]) => {

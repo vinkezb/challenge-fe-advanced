@@ -2,7 +2,7 @@ import http from "http";
 import { Socket, Server as SocketIOServer } from "socket.io";
 import express from "express";
 import { cssColors, textMessages, users } from "./data";
-import { Message, User } from "./models";
+import { Message, User } from "./model/models";
 import { v4 as uuidv4 } from "uuid";
 
 const CHAT_MSG = "chat-message";
