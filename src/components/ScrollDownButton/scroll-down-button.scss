@@ -21,6 +21,9 @@
     border: 1px solid black;
     color: black;
   }
+  @media (max-width: 648px) {
+    background-color: rgba(215, 248, 228, 0.5);
+  }
 }
 
 .scroll-donw-button-mobile {
