@@ -64,7 +64,7 @@ io.on("connection", (socket: Socket) => {
     } else {
       clearInterval(messageInterval);
     }
-  }, 3000);
+  }, 5000);
 
   socket.on(CHAT_MSG, (msg: Message) => {
     console.log("Message received", msg);
