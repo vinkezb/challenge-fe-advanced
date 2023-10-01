@@ -46,6 +46,7 @@ function MessageInput() {
     } else {
       setOpenTagPopup(false);
     }
+    if (inputValue.includes(" ")) setOpenTagPopup(false);
   }, [inputValue]);
 
   return (
