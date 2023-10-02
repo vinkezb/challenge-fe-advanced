@@ -20,8 +20,8 @@
   @media (max-width: 648px) {
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
-    width: 100%;
-    left: 0;
+    width: 100% !important;
+    left: 0 !important;
   }
 }
 
@@ -29,5 +29,5 @@
   @extend .tag-popup;
   width: 180px;
   height: 269px;
-  left: 277px;
+  left: 375px;
 }

@@ -12,8 +12,11 @@
   flex-direction: column;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 375px);
   height: 100%;
+  @media (max-width: 648px) {
+    width: 100%;
+  }
 }
 
 .chat::-webkit-scrollbar {

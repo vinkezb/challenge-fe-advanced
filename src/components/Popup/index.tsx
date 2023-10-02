@@ -38,11 +38,13 @@ function Popup({ userNameString, title }: Props) {
             title="Camera"
             onClick={() => {}}
           />
+          <hr />
           <ShareButton
             icon={<PictureOutlined />}
             title="Gallery"
             onClick={() => {}}
           />
+          <hr />
           <ShareButton icon={<GifOutlined />} title="Gif" onClick={() => {}} />
         </>
       )}
